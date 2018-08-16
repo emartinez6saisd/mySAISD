@@ -14,7 +14,7 @@
   <feature name="http://api.phonegap.com/1.0/network" />
   <gap:plugin onload="true" version="3.2.2" name="cordova-plugin-splashscreen" />
   <gap:plugin version="1.1.0" name="cordova-plugin-ios-longpress-fix" source="npm" />
-  <preference value="cli-6.3.0" name="phonegap-version" />
+  <preference name="phonegap-version" value="cli-6.4.0" />
   <gap:plugin onload="true" version="2.1.0" name="cordova-plugin-statusbar" source="npm" />
   <gap:plugin name="cordova-plugin-whitelist" source="npm" />
   <access origin="*" />
