@@ -1,4 +1,4 @@
-﻿<widget versionCode="2" version="2.0" id="com.devexpress.apptemplate" xmlns:gap="http://phonegap.com/ns/1.0" xmlns="http://www.w3.org/ns/widgets">
+﻿<widget versionCode="2" version="2.1" id="com.devexpress.apptemplate" xmlns:gap="http://phonegap.com/ns/1.0" xmlns="http://www.w3.org/ns/widgets">
   <name>ApplicationTemplate</name>
   <preference value="none" name="permissions" />
   <preference value="true" name="prerendered-icon" />
