@@ -1,0 +1,27 @@
+﻿<widget versionCode="1" version="1.0" id="com.devexpress.apptemplate" xmlns:gap="http://phonegap.com/ns/1.0" xmlns="http://www.w3.org/ns/widgets">
+  <name>ApplicationTemplate</name>
+  <preference value="none" name="permissions" />
+  <preference value="true" name="prerendered-icon" />
+  <preference value="adjustPan" name="android-windowSoftInputMode" />
+  <preference value="splash" name="SplashScreen" />
+  <preference value="10000" name="SplashScreenDelay" />
+  <preference value="false" name="AutoHideSplashScreen" />
+  <preference value="true" name="DisallowOverscroll" />
+  <preference value="false" name="StatusBarOverlaysWebView" />
+  <preference value="#000000" name="StatusBarBackgroundColor" />
+  <preference value="14" name="android-minSdkVersion" />
+  <preference value="22" name="android-targetSdkVersion" />
+  <feature name="http://api.phonegap.com/1.0/network" />
+  <gap:plugin onload="true" version="3.2.2" name="cordova-plugin-splashscreen" />
+  <gap:plugin version="1.1.0" name="cordova-plugin-ios-longpress-fix" source="npm" />
+  <preference value="cli-6.3.0" name="phonegap-version" />
+  <gap:plugin onload="true" version="2.1.0" name="cordova-plugin-statusbar" source="npm" />
+  <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+  <access origin="*" />
+  <preference name="FadeSplashScreen" value="false" />
+  <preference name="ShowSplashScreenSpinner" value="false" />
+  <key>CFBundleVersion</key>
+  <string>2.1.0</string>
+  <key>CFBundleShortVersionString</key>
+  <string>2.1</string>
+</widget>
