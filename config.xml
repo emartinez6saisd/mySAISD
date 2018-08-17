@@ -20,7 +20,7 @@
   <preference name="FadeSplashScreen" value="false" />
   <preference name="ShowSplashScreenSpinner" value="false" />
   <key>CFBundleVersion</key>
-  <string>2.1.0</string>
+  <string>2.2.0</string>
   <key>CFBundleShortVersionString</key>
-  <string>2.1</string>
+  <string>2.2</string>
 </widget>
