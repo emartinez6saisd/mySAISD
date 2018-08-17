@@ -1,4 +1,4 @@
-﻿<widget versionCode="2" version="2.4" id="com.devexpress.apptemplate" xmlns:gap="http://phonegap.com/ns/1.0" xmlns="http://www.w3.org/ns/widgets">
+﻿<widget versionCode="2" version="2.5" id="com.devexpress.apptemplate" xmlns:gap="http://phonegap.com/ns/1.0" xmlns="http://www.w3.org/ns/widgets">
   <name>mySAISD</name>
   <preference value="none" name="permissions" />
   <preference value="true" name="prerendered-icon" />
@@ -20,8 +20,11 @@
   <preference name="FadeSplashScreen" value="false" />
   <preference name="ShowSplashScreenSpinner" value="false" />
   <key>CFBundleVersion</key>
-  <string>2.4.0</string>
+  <string>2.5.0</string>
   <key>CFBundleShortVersionString</key>
-  <string>2.4</string>
-  <icon src="Resources/mySAISD-splashscreen1024x1024.png" width="1024" height="1024" />
+  <string>2.5</string>
+  <icon platform="ios" src="Resources/mySAISD-splashscreen1024x1024.png" width="1024" height="1024" />
+  <icon platform="ios" src="Resources/mySAISD-splashscreen120x120.png" width="120" height="120" />
+  <icon platform="ios" src="Resources/mySAISD-splashscreen152x152.png" width="152" height="152" />
+  <icon platform="ios" src="Resources/mySAISD-splashscreen76x76.png" width="76" height="76" />
 </widget>
