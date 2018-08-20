@@ -24,7 +24,7 @@
   <key>CFBundleShortVersionString</key>
   <string>2.6</string>
   <icon platform="ios" src="Resources/mySAISD-splashscreen1024x1024.png" width="1024" height="1024" />
-  <!--<icon platform="ios" src="Resources/mySAISD-splashscreen120x120.png" width="120" height="120" />
+  <icon platform="ios" src="Resources/mySAISD-splashscreen120x120.png" width="120" height="120" />
   <icon platform="ios" src="Resources/mySAISD-splashscreen152x152.png" width="152" height="152" />
-  <icon platform="ios" src="Resources/mySAISD-splashscreen76x76.png" width="76" height="76" />-->
+  <icon platform="ios" src="Resources/mySAISD-splashscreen76x76.png" width="76" height="76" />
 </widget>
