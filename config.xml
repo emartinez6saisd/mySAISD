@@ -23,6 +23,7 @@
   <string>2.7.0</string>
   <key>CFBundleShortVersionString</key>
   <string>2.7</string>
+  <key>CFBundleIconFiles</key>
   <array>
     <string>icon-40.png</string>
     <string>icon-40@2x.png</string>
