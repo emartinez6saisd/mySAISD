@@ -43,7 +43,7 @@
     <string>icon.png</string>
     <string>icon@2x.png</string>
     <string>iTunesArtwork@1x.png</string>
-    <string>ItunesArtwork@2x.png</string>
+    <string>icon-1024.png</string>
     <string>iTunesArtwork@3x.png</string>
   </array>
   <!--<icon platform="ios" src="Resources/icon-40.png" width="40" height="40" />
@@ -64,6 +64,6 @@
   <icon platform="ios" src="Resources/icon.png" width="57" height="57" />
   <icon platform="ios" src="Resources/icon@2x.png" width="114" height="114" />
   <icon platform="ios" src="Resources/iTunesArtwork@1x.png" width="512" height="512" />
-  <icon platform="ios" src="Resources/ItunesArtwork@2x.png" width="1025" height="1024" />
+  <icon platform="ios" src="Resources/ItunesArtwork@2x.png" width="1024" height="1024" />
   <icon platform="ios" src="Resources/iTunesArtwork@3x.png" width="1536" height="1536" />-->
 </widget>
