@@ -23,4 +23,5 @@
   <string>2.6.0</string>
   <key>CFBundleShortVersionString</key>
   <string>2.6</string>
+  <icon platform="ios" src="Resources/ItunesArtwork@2x.png" width="1024" height="1024" />
 </widget>
