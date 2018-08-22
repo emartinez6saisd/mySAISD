@@ -22,9 +22,32 @@
   <key>CFBundleVersion</key>
   <string>2.6.0</string>
   <key>CFBundleShortVersionString</key>
-  <string>2.6</string>
+  <string>2.6</string>  
+  <!--<key>CFBundleIconFiles</key>
+  <array>
+      <string>icon@2x.png</string>
+      <string>icon.png</string>
+      <string>Icon-Small.png</string>
+      <string>Icon-Small@2x.png</string>
+      <string>Default.png</string>
+      <string>Default@2x.png</string>
+      <string>icon-72.png</string>
+      <string>icon-72@2x.png</string>
+      <string>Icon-Small-50.png</string>
+      <string>Icon-Small-50@2x.png</string>
+      <string>Default-Landscape.png</string>
+      <string>Default-Landscape@2x.png</string>
+      <string>Default-Portrait.png</string>
+      <string>Default-Portrait@2x.png</string>
+      <string>icon-40.png</string>
+      <string>icon-40@2x.png</string>
+      <string>icon-60.png</string>
+      <string>icon-60@2x.png</string>
+      <string>icon-76.png</string>
+      <string>icon-76@2x.png</string>
+  </array>
+  <icon platform="ios" src="Resources/mySAISD-splashscreen120x120.png" width="120" height="120" />
   <icon platform="ios" src="Resources/PackageIcons.iOS.iTunesArtwork.png" width="1024" height="1024" />
-  <!--<icon platform="ios" src="Resources/mySAISD-splashscreen120x120.png" width="120" height="120" />
   <icon platform="ios" src="Resources/mySAISD-splashscreen152x152.png" width="152" height="152" />
   <icon platform="ios" src="Resources/mySAISD-splashscreen76x76.png" width="76" height="76" />
   <icon platform="ios" src="Resources/mySAISD-splashscreen1024x1024.png" width="1024" height="1024" />    
