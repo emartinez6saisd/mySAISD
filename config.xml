@@ -13,7 +13,6 @@
   <preference value="26" name="android-targetSdkVersion" />
   <feature name="http://api.phonegap.com/1.0/network" />  
   <gap:plugin version="1.1.0" name="cordova-plugin-ios-longpress-fix" source="npm" />
-  <!--<preference name="phonegap-version" value="cli-6.4.0" />-->
   <gap:plugin onload="true" version="2.1.0" name="cordova-plugin-statusbar" source="npm" />
   <gap:plugin name="cordova-plugin-whitelist" source="npm" />
   <access origin="*" />
@@ -25,49 +24,4 @@
   <string>2.7.0</string>
   <key>CFBundleShortVersionString</key>
   <string>2.7</string>
-  <key>CFBundleIconFiles</key>
-  <array>
-    <string>icon-40.png</string>
-    <string>icon-40@2x.png</string>
-    <string>icon-40@3x.png</string>
-    <string>icon-50.png</string>
-    <string>icon-50@2x.png</string>
-    <string>icon-60@2x.png</string>
-    <string>icon-60@3x.png</string>
-    <string>icon-72.png</string>
-    <string>icon-72@2x.png</string>
-    <string>icon-76.png</string>
-    <string>icon-76@2x.png.png</string>
-    <string>icon-83.5@2x.png</string>
-    <string>icon-small.png</string>
-    <string>icon-small@2x.png</string>
-    <string>icon-small@3x.png</string>
-    <string>icon.png</string>
-    <string>icon@2x.png</string>    
-    <string>icon-1024@1x.png</string>
-    <!--<string>iTunesArtwork@3x.png</string>
-    <string>iTunesArtwork@1x.png</string>-->
-  </array>
-  <!--<icon height="1024" width="1024" src="Resources/icon-1024@1x.png" />
-  <icon height="50" width="50" src="Resources/icon-50.png" />-->
-  <!--<icon platform="ios" src="Resources/icon-40.png" width="40" height="40" />
-  <icon platform="ios" src="Resources/icon-40@2x.png" width="80" height="80" />
-  <icon platform="ios" src="Resources/icon-40@3x.png" width="120" height="120" />
-  <icon platform="ios" src="Resources/icon-50.png" width="50" height="50" />
-  <icon platform="ios" src="Resources/icon-50@2x.png" width="100" height="100" />
-  <icon platform="ios" src="Resources/icon-60@2x.png" width="120" height="120" />
-  <icon platform="ios" src="Resources/icon-60@3x.png" width="180" height="180" />
-  <icon platform="ios" src="Resources/icon-72.png" width="72" height="72" />
-  <icon platform="ios" src="Resources/icon-72@2x.png" width="144" height="144" />
-  <icon platform="ios" src="Resources/icon-76.png" width="76" height="76" />
-  <icon platform="ios" src="Resources/icon-76@2x.png.png" width="152" height="152" />
-  <icon platform="ios" src="Resources/icon-83.5@2x.png" width="167" height="167" />
-  <icon platform="ios" src="Resources/icon-small.png" width="29" height="29" />
-  <icon platform="ios" src="Resources/icon-small@2x.png" width="58" height="58" />
-  <icon platform="ios" src="Resources/icon-small@3x.png" width="87" height="87" />
-  <icon platform="ios" src="Resources/icon.png" width="57" height="57" />
-  <icon platform="ios" src="Resources/icon@2x.png" width="114" height="114" />
-  <icon platform="ios" src="Resources/iTunesArtwork@1x.png" width="512" height="512" />
-  <icon platform="ios" src="Resources/ItunesArtwork@2x.png" width="1024" height="1024" />
-  <icon platform="ios" src="Resources/iTunesArtwork@3x.png" width="1536" height="1536" />-->
 </widget>
