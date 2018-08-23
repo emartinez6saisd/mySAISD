@@ -41,10 +41,10 @@
     <string>icon-small@2x.png</string>
     <string>icon-small@3x.png</string>
     <string>icon.png</string>
-    <string>icon@2x.png</string>
-    <string>iTunesArtwork@1x.png</string>
+    <string>icon@2x.png</string>    
     <string>icon-1024.png</string>
-    <string>iTunesArtwork@3x.png</string>
+    <!--<string>iTunesArtwork@3x.png</string>
+    <string>iTunesArtwork@1x.png</string>-->
   </array>
   <!--<icon platform="ios" src="Resources/icon-40.png" width="40" height="40" />
   <icon platform="ios" src="Resources/icon-40@2x.png" width="80" height="80" />
