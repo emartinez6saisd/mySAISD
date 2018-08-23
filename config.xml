@@ -13,12 +13,14 @@
   <preference value="26" name="android-targetSdkVersion" />
   <feature name="http://api.phonegap.com/1.0/network" />  
   <gap:plugin version="1.1.0" name="cordova-plugin-ios-longpress-fix" source="npm" />
-  <preference name="phonegap-version" value="cli-6.4.0" />
+  <!--<preference name="phonegap-version" value="cli-6.4.0" />-->
   <gap:plugin onload="true" version="2.1.0" name="cordova-plugin-statusbar" source="npm" />
   <gap:plugin name="cordova-plugin-whitelist" source="npm" />
   <access origin="*" />
   <preference name="FadeSplashScreen" value="false" />
   <preference name="ShowSplashScreenSpinner" value="false" />
+  <preference name="cordova-ios" version="4.5.4" />
+  <preference name="phonegap-version" value="cli-8.0.0" />
   <key>CFBundleVersion</key>
   <string>2.7.0</string>
   <key>CFBundleShortVersionString</key>
@@ -28,7 +30,7 @@
     <string>icon-40.png</string>
     <string>icon-40@2x.png</string>
     <string>icon-40@3x.png</string>
-    <!--<string>icon-50.png</string>-->
+    <string>icon-50.png</string>
     <string>icon-50@2x.png</string>
     <string>icon-60@2x.png</string>
     <string>icon-60@3x.png</string>
@@ -42,12 +44,12 @@
     <string>icon-small@3x.png</string>
     <string>icon.png</string>
     <string>icon@2x.png</string>    
-    <!--<string>icon-1024@1x.png</string>-->
+    <string>icon-1024@1x.png</string>
     <!--<string>iTunesArtwork@3x.png</string>
     <string>iTunesArtwork@1x.png</string>-->
   </array>
-  <icon height="1024" width="1024" src="Resources/icon-1024@1x.png" />
-  <icon height="50" width="50" src="Resources/icon-50.png" />
+  <!--<icon height="1024" width="1024" src="Resources/icon-1024@1x.png" />
+  <icon height="50" width="50" src="Resources/icon-50.png" />-->
   <!--<icon platform="ios" src="Resources/icon-40.png" width="40" height="40" />
   <icon platform="ios" src="Resources/icon-40@2x.png" width="80" height="80" />
   <icon platform="ios" src="Resources/icon-40@3x.png" width="120" height="120" />
