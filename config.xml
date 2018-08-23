@@ -28,7 +28,7 @@
     <string>icon-40.png</string>
     <string>icon-40@2x.png</string>
     <string>icon-40@3x.png</string>
-    <string>icon-50.png</string>
+    <!--<string>icon-50.png</string>-->
     <string>icon-50@2x.png</string>
     <string>icon-60@2x.png</string>
     <string>icon-60@3x.png</string>
@@ -47,6 +47,7 @@
     <string>iTunesArtwork@1x.png</string>-->
   </array>
   <icon height="1024" width="1024" src="Resources/icon-1024@1x.png" />
+  <icon height="50" width="50" src="Resources/icon-50.png" />
   <!--<icon platform="ios" src="Resources/icon-40.png" width="40" height="40" />
   <icon platform="ios" src="Resources/icon-40@2x.png" width="80" height="80" />
   <icon platform="ios" src="Resources/icon-40@3x.png" width="120" height="120" />
