@@ -3,9 +3,9 @@
   <preference value="none" name="permissions" />
   <preference value="true" name="prerendered-icon" />
   <preference value="adjustPan" name="android-windowSoftInputMode" />
-  <preference value="splash" name="SplashScreen" />
+  <!--<preference value="splash" name="SplashScreen" />
   <preference value="10000" name="SplashScreenDelay" />  
-  <preference value="false" name="AutoHideSplashScreen" />
+  <preference value="false" name="AutoHideSplashScreen" />-->
   <preference value="true" name="DisallowOverscroll" />
   <preference value="false" name="StatusBarOverlaysWebView" />
   <preference value="#000000" name="StatusBarBackgroundColor" />
