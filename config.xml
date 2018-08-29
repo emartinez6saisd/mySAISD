@@ -12,7 +12,7 @@
   <preference value="14" name="android-minSdkVersion" />
   <preference value="26" name="android-targetSdkVersion" />
   <feature name="http://api.phonegap.com/1.0/network" />
-  <gap:plugin onload="true" version="3.2.2" name="cordova-plugin-splashscreen" />
+  <gap:plugin onload="true" version="5.0.7" name="cordova-plugin-splashscreen" />
   <gap:plugin version="1.1.0" name="cordova-plugin-ios-longpress-fix" source="npm" />
   <preference value="cli-6.3.0" name="phonegap-version" />  
   <gap:plugin onload="true" version="2.1.0" name="cordova-plugin-statusbar" source="npm" />  
