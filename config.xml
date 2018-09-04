@@ -1,4 +1,4 @@
-﻿<widget versionCode="2" version="2.10" id="com.devexpress.apptemplate" xmlns:gap="http://phonegap.com/ns/1.0" xmlns="http://www.w3.org/ns/widgets">
+﻿<widget versionCode="2" version="2.11" id="com.devexpress.apptemplate" xmlns:gap="http://phonegap.com/ns/1.0" xmlns="http://www.w3.org/ns/widgets">
   <name>mySAISD</name>
   <preference value="none" name="permissions" />
   <preference value="true" name="prerendered-icon" />
@@ -17,11 +17,10 @@
   <feature name="http://api.phonegap.com/1.0/network" />
   <gap:plugin version="1.1.0" name="cordova-plugin-ios-longpress-fix" source="npm" />  
   <gap:plugin onload="true" version="2.1.0" name="cordova-plugin-statusbar" source="npm" />  
-  <gap:plugin name="cordova-plugin-whitelist" source="npm" />
-  <gap:plugin name="org.apache.cordova.splashscreen" />
+  <gap:plugin name="cordova-plugin-whitelist" source="npm" />  
   <access origin="*" />  
   <key>CFBundleVersion</key>
-  <string>2.10.0</string>
+  <string>2.11.0</string>
   <key>CFBundleShortVersionString</key>
-  <string>2.10</string>
+  <string>2.11</string>
 </widget>
