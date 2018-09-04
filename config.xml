@@ -1,4 +1,4 @@
-﻿<widget versionCode="2" version="2.9" id="com.devexpress.apptemplate" xmlns:gap="http://phonegap.com/ns/1.0" xmlns="http://www.w3.org/ns/widgets">
+﻿<widget versionCode="2" version="2.12" id="com.devexpress.apptemplate" xmlns:gap="http://phonegap.com/ns/1.0" xmlns="http://www.w3.org/ns/widgets">
   <name>mySAISD</name>
   <preference value="none" name="permissions" />
   <preference value="true" name="prerendered-icon" />
@@ -16,9 +16,9 @@
   <preference name="FadeSplashScreen" value="false" />
   <preference name="ShowSplashScreenSpinner" value="false" />
   <key>CFBundleVersion</key>
-  <string>2.9.0</string>
+  <string>2.12.0</string>
   <key>CFBundleShortVersionString</key>
-  <string>2.9</string>  
+  <string>2.12</string>  
   <plugin name="cordova-plugin-splashscreen" onload="true" />
   <gap:plugin name="cordova-plugin-whitelist" source="npm" />
   <gap:plugin version="1.1.0" name="cordova-plugin-ios-longpress-fix" source="npm" />
