@@ -1,4 +1,4 @@
-﻿<widget versionCode="2" version="2.20" id="com.devexpress.apptemplate" xmlns:gap="http://phonegap.com/ns/1.0" xmlns="http://www.w3.org/ns/widgets">
+﻿<widget versionCode="2" version="2.21" id="com.devexpress.apptemplate" xmlns:gap="http://phonegap.com/ns/1.0" xmlns="http://www.w3.org/ns/widgets">
   <name>mySAISD</name>
   <preference value="none" name="permissions" />
   <preference value="true" name="prerendered-icon" />
@@ -12,13 +12,14 @@
   <preference value="14" name="android-minSdkVersion" />
   <preference value="26" name="android-targetSdkVersion" />
   <feature name="http://api.phonegap.com/1.0/network" />
-  <preference value="cli-6.3.0" name="phonegap-version" />
+  <!--<preference value="cli-6.3.0" name="phonegap-version" />-->
+  <preference value="cli-6.5.0" name="phonegap-version" />
   <preference name="FadeSplashScreen" value="false" />
   <preference name="ShowSplashScreenSpinner" value="false" />
   <key>CFBundleVersion</key>
-  <string>2.20.0</string>
+  <string>2.21.0</string>
   <key>CFBundleShortVersionString</key>
-  <string>2.20</string>
+  <string>2.21</string>
   <author email="email@sample.com" href="sample.com">Description</author>
   <plugin name="cordova-plugin-splashscreen" onload="true" />
   <gap:plugin name="cordova-plugin-whitelist" source="npm" />

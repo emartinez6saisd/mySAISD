@@ -66,7 +66,7 @@
             DevExpress.localization.locale(mySAISDLang);
             window.localStorage.setItem("mySAISDLang", mySAISDLang);
         }
-
+        
         $.when(
            $.getJSON("js/cldr/main/" + mySAISDLang.substring(0, 2) + "/ca-gregorian.json"),
            $.getJSON("js/cldr/main/" + mySAISDLang.substring(0, 2) + "/numbers.json"),
