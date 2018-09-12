@@ -68,16 +68,17 @@
         }
         
         $.when(
-           $.getJSON("js/cldr/main/" + mySAISDLang.substring(0, 2) + "/ca-gregorian.json"),
-           $.getJSON("js/cldr/main/" + mySAISDLang.substring(0, 2) + "/numbers.json"),
-           $.getJSON("js/cldr/main/" + mySAISDLang.substring(0, 2) + "/timeZoneNames.json"),
-           $.getJSON("js/cldr/main/" + mySAISDLang.substring(0, 2) + "/dateFields.json"),
-           $.getJSON("js/cldr/supplemental/likelySubtags.json"),
-           $.getJSON("js/cldr/supplemental/timeData.json"),
-           $.getJSON("js/cldr/supplemental/weekData.json"),
-           $.getJSON("js/cldr/supplemental/numberingSystems.json"),
-           $.getJSON("js/cldr/supplemental/plurals.json"),
-           $.getJSON("js/cldr/supplemental/ordinals.json")
+           //$.getJSON("js/cldr/main/" + mySAISDLang.substring(0, 2) + "/ca-gregorian.json"),
+           //$.getJSON("js/cldr/main/" + mySAISDLang.substring(0, 2) + "/numbers.json"),
+           //$.getJSON("js/cldr/main/" + mySAISDLang.substring(0, 2) + "/timeZoneNames.json"),
+           //$.getJSON("js/cldr/main/" + mySAISDLang.substring(0, 2) + "/dateFields.json"),
+           //$.getJSON("js/cldr/supplemental/likelySubtags.json"),
+           //$.getJSON("js/cldr/supplemental/timeData.json"),
+           //$.getJSON("js/cldr/supplemental/weekData.json"),
+           //$.getJSON("js/cldr/supplemental/numberingSystems.json"),
+           //$.getJSON("js/cldr/supplemental/plurals.json"),
+           //$.getJSON("js/cldr/supplemental/ordinals.json")
+           
          ).then(function () {
              return [].slice.apply(arguments, [0]).map(function (result) {
                  return result[0];
