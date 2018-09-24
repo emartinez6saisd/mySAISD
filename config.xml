@@ -1,28 +1,28 @@
-﻿<widget versionCode="2" version="2.36" id="com.devexpress.apptemplate" xmlns:gap="http://phonegap.com/ns/1.0" xmlns="http://www.w3.org/ns/widgets">
-  <name>mySAISD</name>
-  <preference value="none" name="permissions" />
-  <preference value="true" name="prerendered-icon" />
-  <preference value="adjustPan" name="android-windowSoftInputMode" />
-  <!--<preference value="splash" name="SplashScreen" />-->
-  <preference value="0" name="SplashScreenDelay" />
-  <preference value="true" name="AutoHideSplashScreen" />
-  <preference value="true" name="DisallowOverscroll" />
-  <preference value="false" name="StatusBarOverlaysWebView" />
-  <preference value="#000000" name="StatusBarBackgroundColor" />
-  <preference value="14" name="android-minSdkVersion" />
-  <preference value="26" name="android-targetSdkVersion" />
-  <feature name="http://api.phonegap.com/1.0/network" />
-  <preference value="cli-6.5.0" name="phonegap-version" />
+<widget id="com.devexpress.apptemplate" version="2.37" versionCode="1">
+  <name>ApplicationTemplate</name>
+  <description>Template</description>
+  <author email="email@sample.com" href="http://sample.com">Author</author>
+  <preference name="permissions" value="none" />
+  <preference name="prerendered-icon" value="true" />
+  <preference name="android-windowSoftInputMode" value="adjustResize" />
+  <preference name="SplashScreen" value="splash" />
+  <preference name="SplashScreenDelay" value="60000" />
+  <preference name="AutoHideSplashScreen" value="false" />
+  <preference name="SplashShowOnlyFirstTime" value="false" />
   <preference name="FadeSplashScreen" value="false" />
   <preference name="ShowSplashScreenSpinner" value="false" />
+  <preference name="DisallowOverscroll" value="true" />
+  <preference name="StatusBarOverlaysWebView" value="false" />
+  <preference name="StatusBarBackgroundColor" value="#000000" />
+  <preference name="android-minSdkVersion" value="14" />
+  <preference name="android-targetSdkVersion" value="22" />
   <key>CFBundleVersion</key>
-  <string>2.36.0</string>
+  <string>2.37.0</string>
   <key>CFBundleShortVersionString</key>
-  <string>2.36</string>
-  <author email="email@sample.com" href="sample.com">Description</author>
-  <plugin name="cordova-plugin-inappbrowser" />
+  <string>2.37</string>
   <plugin name="cordova-plugin-splashscreen" onload="true" />
   <plugin name="cordova-plugin-whitelist" />
-  <access origin="*" launch-external="yes" />
-  <!--<icon platform="ios" src="Resources/PackageIcons.iOS.iTunesArtwork.png" width="1024" height="1024" />-->
+  <plugin name="cordova-plugin-ios-longpress-fix" />
+  <plugin name="cordova-plugin-statusbar" onload="true" />
+  <access origin="*" />
 </widget>
