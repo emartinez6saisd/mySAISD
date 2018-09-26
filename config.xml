@@ -1,4 +1,4 @@
-<widget id="com.devexpress.apptemplate" version="2.37" versionCode="1">
+<widget id="com.devexpress.apptemplate" version="2.38" versionCode="1">
   <name>ApplicationTemplate</name>
   <description>Template</description>
   <author email="email@sample.com" href="http://sample.com">Author</author>
@@ -17,9 +17,9 @@
   <preference name="android-minSdkVersion" value="14" />
   <preference name="android-targetSdkVersion" value="22" />
   <key>CFBundleVersion</key>
-  <string>2.37.0</string>
+  <string>2.38.0</string>
   <key>CFBundleShortVersionString</key>
-  <string>2.37</string>
+  <string>2.38</string>
   <plugin name="cordova-plugin-splashscreen" onload="true" />
   <plugin name="cordova-plugin-whitelist" />
   <plugin name="cordova-plugin-ios-longpress-fix" />
