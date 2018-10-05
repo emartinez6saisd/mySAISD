@@ -24,7 +24,7 @@
   <plugin name="cordova-plugin-splashscreen" onload="true" />
   <plugin name="cordova-plugin-whitelist" />
   <access origin="*" launch-external="yes" />
-  <icon platform="ios" src="PackageIcons.iOS.iTunesArtwork.png" width="1024" height="1024" />
+  <!--<icon platform="ios" src="mySAISD\PackageIcons.iOS.iTunesArtwork.png" width="1024" height="1024" />-->
 </widget>
 
 <!--<widget id="com.devexpress.apptemplate" version="2.40" versionCode="2">
