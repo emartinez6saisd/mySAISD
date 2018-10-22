@@ -18,9 +18,9 @@
   <preference name="android-targetSdkVersion" value="22" />
   <preference name="phonegap-version" value="cli-8.0.0" />
   <key>CFBundleVersion</key>
-  <string>2.48.0</string>
+  <string>2.49.0</string>
   <key>CFBundleShortVersionString</key>
-  <string>2.48</string>
+  <string>2.49</string>
   <plugin name="cordova-plugin-splashscreen" onload="true" />
   <plugin name="cordova-plugin-whitelist" />
   <plugin name="cordova-plugin-ios-longpress-fix" />
