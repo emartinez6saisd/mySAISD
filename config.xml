@@ -1,4 +1,4 @@
-﻿<widget id="com.devexpress.apptemplate" version="2.51" versionCode="2">
+﻿<widget id="com.devexpress.apptemplate" version="2.52" versionCode="2">
   <name>mySAISD</name>
   <description>mySAISD Template</description>
   <author email="dwsupport@saisd.net" href="http://www.saisd.net">DW Support</author>
@@ -18,9 +18,9 @@
   <preference name="android-targetSdkVersion" value="22" />
   <preference name="phonegap-version" value="cli-8.0.0" />
   <key>CFBundleVersion</key>
-  <string>2.51.0</string>
+  <string>2.52.0</string>
   <key>CFBundleShortVersionString</key>
-  <string>2.51</string>
+  <string>2.52</string>
   <plugin name="cordova-plugin-splashscreen" onload="true" />
   <plugin name="cordova-plugin-whitelist" />
   <plugin name="cordova-plugin-ios-longpress-fix" />
