@@ -1,12 +1,12 @@
-﻿<widget id="com.devexpress.apptemplate" version="2.50" versionCode="2">
+﻿<widget id="com.devexpress.apptemplate" version="2.51" versionCode="2">
   <name>mySAISD</name>
   <description>mySAISD Template</description>
-  <author email="dwsupport@saisd.net" href="http://www.saisd.net">Eddie Martinez</author>
+  <author email="dwsupport@saisd.net" href="http://www.saisd.net">DW Support</author>
   <preference name="permissions" value="none" />
   <preference name="prerendered-icon" value="true" />
   <preference name="android-windowSoftInputMode" value="adjustResize" />
   <preference name="SplashScreen" value="splash" />
-  <preference name="SplashScreenDelay" value="60000" />
+  <preference name="SplashScreenDelay" value="10000" />
   <preference name="AutoHideSplashScreen" value="false" />
   <preference name="SplashShowOnlyFirstTime" value="false" />
   <preference name="FadeSplashScreen" value="false" />
@@ -18,16 +18,15 @@
   <preference name="android-targetSdkVersion" value="22" />
   <preference name="phonegap-version" value="cli-8.0.0" />
   <key>CFBundleVersion</key>
-  <string>2.50.0</string>
+  <string>2.51.0</string>
   <key>CFBundleShortVersionString</key>
-  <string>2.50</string>
+  <string>2.51</string>
   <plugin name="cordova-plugin-splashscreen" onload="true" />
   <plugin name="cordova-plugin-whitelist" />
   <plugin name="cordova-plugin-ios-longpress-fix" />
   <plugin name="cordova-plugin-statusbar" onload="true" />
-  <access origin="*" />
+  <access origin="*" launch-external="yes" />
 </widget>
-
 <!--<widget versionCode="2" version="2.40" id="com.devexpress.apptemplate" xmlns:gap="http://phonegap.com/ns/1.0" xmlns="http://www.w3.org/ns/widgets">
   <name>mySAISD</name>
   <preference value="none" name="permissions" />
