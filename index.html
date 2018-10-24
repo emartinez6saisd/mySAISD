@@ -1,100 +1,57 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="css/dx.spa.css" />
-    <link rel="stylesheet" type="text/css" href="css/dx.common.css" />
-    <link rel="dx-theme" data-theme="generic.light" href="css/dx.light.css" data-active="true" />
-    <link rel="dx-theme" data-theme="generic.light.compact" href="css/dx.light.compact.css" />
-    <link rel="dx-theme" data-theme="generic.dark.compact" href="css/dx.dark.compact.css" />
-    <link rel="dx-theme" data-theme="generic.contrast" href="css/dx.contrast.css" />
-    <link rel="dx-theme" data-theme="generic.contrast.compact" href="css/dx.contrast.compact.css" />
-    <link rel="dx-theme" data-theme="android5.light" href="css/dx.android5.light.css" />
-    <link rel="dx-theme" data-theme="ios7.default" href="css/dx.ios7.default.css" />
-    <!-- <link rel="dx-theme" data-theme="win8.black" href="css/dx.win8.black.css" data-active="true" /> -->
-    <link rel="dx-theme" data-theme="win10.black" href="css/dx.win10.black.css" data-active="true" />
-    <!-- <link rel="dx-theme" data-theme="win8.white" href="css/dx.win8.white.css" /> -->
-    <link rel="dx-theme" data-theme="win10.white" href="css/dx.win10.white.css" />
-
-    <title>mySAISD</title>
-
+    <title>BasicAppTest</title>
+        
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <!-- Uncomment the line below to disable phone format detection  -->
     <!--<meta name="format-detection" content="telephone=no">-->
 
     <script type="text/javascript" src="cordova.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="css/dx.spa.css" />
+    <link rel="stylesheet" type="text/css" href="css/dx.common.css" />    
 
+    <link rel="dx-theme" data-theme="generic.light" href="css/dx.light.css" data-active="true" />
+    <link rel="dx-theme" data-theme="generic.light.compact" href="css/dx.light.compact.css" />
     <link rel="dx-theme" data-theme="generic.dark" href="css/dx.dark.css" />
-    <link rel="stylesheet" type="text/css" href="css/mySAISDStyleSheet.css" />
+    <link rel="dx-theme" data-theme="generic.dark.compact" href="css/dx.dark.compact.css" />
+    <link rel="dx-theme" data-theme="generic.contrast" href="css/dx.contrast.css" />
+    <link rel="dx-theme" data-theme="generic.contrast.compact" href="css/dx.contrast.compact.css" />
+    <link rel="dx-theme" data-theme="android5.light" href="css/dx.android5.light.css"/>
+    <link rel="dx-theme" data-theme="ios7.default" href="css/dx.ios7.default.css" />
+    <!--<link rel="dx-theme" data-theme="win8.black" href="css/dx.win8.black.css" data-active="true" />
+    <link rel="dx-theme" data-theme="win8.white" href="css/dx.win8.white.css" />-->
+    <link rel="dx-theme" data-theme="win10.black" href="css/dx.win10.black.css" data-active="true" />
+    <link rel="dx-theme" data-theme="win10.white" href="css/dx.win10.white.css" />
+    <link rel="dx-theme" data-theme="material.blue.light" href="css/dx.material.blue.light.css" />
 
-    <!--[if lt IE 9]>
-    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-    <![endif]-->
-    <!--[if gte IE 9]><!-->
-    <!--<script  src="js/jquery-2.1.4.min.js"></script>-->
-    <!--<![endif]-->
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="js/knockout-3.4.0.js"></script>
-    <script type="text/javascript" src="js/ko.simplegrid.js"></script>   
-    <script type="text/javascript" src="js/dx.all.js"></script>   
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/knockout-latest.js"></script>
 
-    <script type="text/javascript" src="js/mySAISD.js"></script>
-
-    <!--localization-->
-    <script type="text/javascript" src="js/cldr.js"></script>
+    <!-- Read the Localization section of the migration guide for more details http://dxpr.es/1TXqrVS -->
+    <!--
+    <script type="text/javascript" src="js/cldr.min.js"></script>
     <script type="text/javascript" src="js/cldr/event.min.js"></script>
     <script type="text/javascript" src="js/cldr/supplemental.min.js"></script>
+
     <script type="text/javascript" src="js/globalize.min.js"></script>
     <script type="text/javascript" src="js/globalize/message.min.js"></script>
     <script type="text/javascript" src="js/globalize/number.min.js"></script>
-    <script type="text/javascript" src="js/globalize/currency.min.js"></script>
     <script type="text/javascript" src="js/globalize/date.min.js"></script>
-    
-    <script>
-        var mySAISDLang = window.localStorage.getItem("mySAISDLang");
-        if (mySAISDLang) {
-            DevExpress.localization.locale(mySAISDLang);
-        }
-        else {
-            mySAISDLang = "en";
-            DevExpress.localization.locale(mySAISDLang);
-            window.localStorage.setItem("mySAISDLang", mySAISDLang);
-        }
-        
-        $.when(
-           $.getJSON("js/cldr/main/" + mySAISDLang.substring(0, 2) + "/ca-gregorian.json"),
-           $.getJSON("js/cldr/main/" + mySAISDLang.substring(0, 2) + "/numbers.json"),
-           $.getJSON("js/cldr/main/" + mySAISDLang.substring(0, 2) + "/timeZoneNames.json"),
-           $.getJSON("js/cldr/main/" + mySAISDLang.substring(0, 2) + "/dateFields.json"),
-           $.getJSON("js/cldr/supplemental/likelySubtags.json"),
-           $.getJSON("js/cldr/supplemental/timeData.json"),
-           $.getJSON("js/cldr/supplemental/weekData.json"),
-           $.getJSON("js/cldr/supplemental/numberingSystems.json"),
-           $.getJSON("js/cldr/supplemental/plurals.json"),
-           $.getJSON("js/cldr/supplemental/ordinals.json")           
-         ).then(function () {
-             return [].slice.apply(arguments, [0]).map(function (result) {
-                 return result[0];
-             });
-         }).then(
-             Globalize.load
-         ).then(function () {
-             Globalize.locale(mySAISDLang.substring(0, 2));
-         });
-    </script>
+    <script type="text/javascript" src="js/globalize/currency.min.js"></script>
+    -->
 
-    <!-- language localization-->
-    <script type="text/javascript" src="js/localization/dx.messages.es.js"></script>
-    <script type="text/javascript" src="js/localization/localization.es.js"></script>
-    <script type="text/javascript" src="js/localization/localization.en.js"></script>
+    <script type="text/javascript" src="js/dx.all.js"></script>
+    <!--
+    <script type="text/javascript" src="js/dx.all.debug.js"></script>
+    -->
 
-    <!--<script type="text/javascript" src="js/dx.all.debug.js"></script>-->
     <!-- Application -->
     <link rel="stylesheet" type="text/css" href="index.css" />
     <script type="text/javascript" src="app.config.js"></script>
@@ -102,268 +59,27 @@
 
     <!-- Layouts -->
     <link rel="stylesheet" type="text/css" href="layouts/Navbar/NavbarLayout.css" />
-    <link rel="dx-template" type="text/html" href="layouts/Navbar/NavbarLayout.html" />
+    <link rel="dx-template" type="text/html" href="layouts/Navbar/NavbarLayout.html"/>    
     <script type="text/javascript" src="layouts/Navbar/NavbarLayout.js"></script>
 
     <link rel="stylesheet" type="text/css" href="layouts/Pivot/PivotLayout.css" />
-    <link rel="dx-template" type="text/html" href="layouts/Pivot/PivotLayout.html" />
+    <link rel="dx-template" type="text/html" href="layouts/Pivot/PivotLayout.html"/>
     <script type="text/javascript" src="layouts/Pivot/PivotLayout.js"></script>
 
     <link rel="stylesheet" type="text/css" href="layouts/Simple/SimpleLayout.css" />
-    <link rel="dx-template" type="text/html" href="layouts/Simple/SimpleLayout.html" />
+    <link rel="dx-template" type="text/html" href="layouts/Simple/SimpleLayout.html"/>
     <script type="text/javascript" src="layouts/Simple/SimpleLayout.js"></script>
 
     <link rel="stylesheet" type="text/css" href="layouts/Popup/PopupLayout.css" />
-    <link rel="dx-template" type="text/html" href="layouts/Popup/PopupLayout.html" />
+    <link rel="dx-template" type="text/html" href="layouts/Popup/PopupLayout.html"/>
     <script type="text/javascript" src="layouts/Popup/PopupLayout.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="layouts/Empty/EmptyLayout.css" />
-    <link rel="dx-template" type="text/html" href="layouts/Empty/EmptyLayout.html" />
-    <script type="text/javascript" src="layouts/Empty/EmptyLayout.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="layouts/SlideOut/SlideOutLayout.css" />
-    <link rel="dx-template" type="text/html" href="layouts/SlideOut/SlideOutLayout.html" />
-    <script type="text/javascript" src="layouts/SlideOut/SlideOutLayout.js"></script>
-
     <!-- Views -->
-    <link rel="dx-template" type="text/html" href="views/about.html" />
-
-    <script type="text/javascript" src="views/Login.js"></script>
-    <link rel="dx-template" type="text/html" href="views/Login.dxview" />
-
-    <script type="text/javascript" src="views/HelpPreLogin.js"></script>
-    <link rel="dx-template" type="text/html" href="views/HelpPreLogin.dxview" />
-
-    <script type="text/javascript" src="views/Students.js"></script>
-    <link rel="dx-template" type="text/html" href="views/Students.dxview" />
-
-    <script type="text/javascript" src="views/Student.js"></script>
-    <link rel="dx-template" type="text/html" href="views/Student.dxview" />
-
-    <script type="text/javascript" src="views/Grades.js"></script>
-    <link rel="dx-template" type="text/html" href="views/Grades.dxview" />
-
-    <script type="text/javascript" src="views/GradesInterim.js"></script>
-    <link rel="dx-template" type="text/html" href="views/GradesInterim.dxview" />
-
-    <script type="text/javascript" src="views/GradesOfficial.js"></script>
-    <link rel="dx-template" type="text/html" href="views/GradesOfficial.dxview" />
-
-    <script type="text/javascript" src="views/GradesHistorical.js"></script>
-    <link rel="dx-template" type="text/html" href="views/GradesHistorical.dxview" />
-
-    <script type="text/javascript" src="views/Attendance.js"></script>
-    <link rel="dx-template" type="text/html" href="views/Attendance.dxview" />
-
-    <script type="text/javascript" src="views/StateAssessments.js"></script>
-    <link rel="dx-template" type="text/html" href="views/StateAssessments.dxview" />
-
-    <script type="text/javascript" src="views/Schedule.js"></script>
-    <link rel="dx-template" type="text/html" href="views/Schedule.dxview" />
-
-    <script type="text/javascript" src="views/GradesInterimDetail.js"></script>
-    <link rel="dx-template" type="text/html" href="views/GradesInterimDetail.dxview" />
-
-    <script type="text/javascript" src="views/AttendanceCurrentYear.js"></script>
-    <link rel="dx-template" type="text/html" href="views/AttendanceCurrentYear.dxview" />
-
-    <script type="text/javascript" src="views/AttendanceAbsenceDetail.js"></script>
-    <link rel="dx-template" type="text/html" href="views/AttendanceAbsenceDetail.dxview" />
-
-    <script type="text/javascript" src="views/SchoolInfoMap.js"></script>
-    <link rel="dx-template" type="text/html" href="views/SchoolInfoMap.dxview" />
-
-    <script type="text/javascript" src="views/Assignment.js"></script>
-    <link rel="dx-template" type="text/html" href="views/Assignment.dxview" />
-
-    <script type="text/javascript" src="views/GradesHistoricalDetail.js"></script>
-    <link rel="dx-template" type="text/html" href="views/GradesHistoricalDetail.dxview" />
-
-    <script type="text/javascript" src="views/AttendanceHistorical.js"></script>
-    <link rel="dx-template" type="text/html" href="views/AttendanceHistorical.dxview" />
-
-    <script type="text/javascript" src="views/AttendanceHistoricalDetail.js"></script>
-    <link rel="dx-template" type="text/html" href="views/AttendanceHistoricalDetail.dxview" />
-
-    <script type="text/javascript" src="views/StateAssessmentDetail.js"></script>
-    <link rel="dx-template" type="text/html" href="views/StateAssessmentDetail.dxview" />
-
-    <script type="text/javascript" src="views/StateAssessments2.js"></script>
-    <link rel="dx-template" type="text/html" href="views/StateAssessments2.dxview" />
-
-    <script type="text/javascript" src="views/StateAssessmentsGradRequirements.js"></script>
-    <link rel="dx-template" type="text/html" href="views/StateAssessmentsGradRequirements.dxview" />
-
-    <script type="text/javascript" src="views/SchoolInfo.js"></script>
-    <link rel="dx-template" type="text/html" href="views/SchoolInfo.dxview" />
-
-    <script type="text/javascript" src="views/SchoolInfoAccountabilityRating.js"></script>
-    <link rel="dx-template" type="text/html" href="views/SchoolInfoAccountabilityRating.dxview" />
-
-    <script type="text/javascript" src="views/Assessments.js"></script>
-    <link rel="dx-template" type="text/html" href="views/Assessments.dxview" />
-
-    <script type="text/javascript" src="views/SchoolInfoCampusStaff.js"></script>
-    <link rel="dx-template" type="text/html" href="views/SchoolInfoCampusStaff.dxview" />
-
-    <script type="text/javascript" src="views/StudentInfo.js"></script>
-    <link rel="dx-template" type="text/html" href="views/StudentInfo.dxview" />
-
-    <script type="text/javascript" src="views/StudentInfoDemographics.js"></script>
-    <link rel="dx-template" type="text/html" href="views/StudentInfoDemographics.dxview" />
-
-    <script type="text/javascript" src="views/StudentInfoPrograms.js"></script>
-    <link rel="dx-template" type="text/html" href="views/StudentInfoPrograms.dxview" />
-
-    <script type="text/javascript" src="views/StudentInfoContacts.js"></script>
-    <link rel="dx-template" type="text/html" href="views/StudentInfoContacts.dxview" />
-
-    <script type="text/javascript" src="views/SchoolInfoCalendar.js"></script>
-    <link rel="dx-template" type="text/html" href="views/SchoolInfoCalendar.dxview" />
-
-    <script type="text/javascript" src="views/Settings.js"></script>
-    <link rel="dx-template" type="text/html" href="views/Settings.dxview" />
-
-    <script type="text/javascript" src="views/SettingsUserProfile.js"></script>
-    <link rel="dx-template" type="text/html" href="views/SettingsUserProfile.dxview" />
-
-    <script type="text/javascript" src="views/SettingsStudentAccounts.js"></script>
-    <link rel="dx-template" type="text/html" href="views/SettingsStudentAccounts.dxview" />
-
-    <script type="text/javascript" src="views/HelpPostLogin.js"></script>
-    <link rel="dx-template" type="text/html" href="views/HelpPostLogin.dxview" />
-
-    <script type="text/javascript" src="views/HelpPreLoginForgotUsername.js"></script>
-    <link rel="dx-template" type="text/html" href="views/HelpPreLoginForgotUsername.dxview" />
-
-    <script type="text/javascript" src="views/HelpPreLoginForgotPassword.js"></script>
-    <link rel="dx-template" type="text/html" href="views/HelpPreLoginForgotPassword.dxview" />
-
-    <script type="text/javascript" src="views/HelpPreLoginRegister.js"></script>
-    <link rel="dx-template" type="text/html" href="views/HelpPreLoginRegister.dxview" />
-
-    <script type="text/javascript" src="views/HelpPreLoginWhatCanIDo.js"></script>
-    <link rel="dx-template" type="text/html" href="views/HelpPreLoginWhatCanIDo.dxview" />
-
-    <script type="text/javascript" src="views/Messages.js"></script>
-    <link rel="dx-template" type="text/html" href="views/Messages.dxview" />
-
-    <script type="text/javascript" src="views/MessageDetail.js"></script>
-    <link rel="dx-template" type="text/html" href="views/MessageDetail.dxview" />
-
-    <script type="text/javascript" src="views/SettingsChangePassword.js"></script>
-    <link rel="dx-template" type="text/html" href="views/SettingsChangePassword.dxview" />
-
-    <script type="text/javascript" src="views/SettingsSecurityQuestionsChallenge.js"></script>
-    <link rel="dx-template" type="text/html" href="views/SettingsSecurityQuestionsChallenge.dxview" />
-
-    <script type="text/javascript" src="views/SettingsSecurityQuestionsListing.js"></script>
-    <link rel="dx-template" type="text/html" href="views/SettingsSecurityQuestionsListing.dxview" />
-
-    <script type="text/javascript" src="views/SettingsSecurityQuestionsDetail.js"></script>
-    <link rel="dx-template" type="text/html" href="views/SettingsSecurityQuestionsDetail.dxview" />
-
-    <script type="text/javascript" src="views/HelpPostLoginHelp.js"></script>
-    <link rel="dx-template" type="text/html" href="views/HelpPostLoginHelp.dxview" />
-
-    <script type="text/javascript" src="views/HelpPostLoginHelpQuestion.js"></script>
-    <link rel="dx-template" type="text/html" href="views/HelpPostLoginHelpQuestion.dxview" />
-
-    <script type="text/javascript" src="views/HelpPreLoginRegisterParentInfo.js"></script>
-    <link rel="dx-template" type="text/html" href="views/HelpPreLoginRegisterParentInfo.dxview" />
-
-    <script type="text/javascript" src="views/HelpPreLoginRegisterStudentInfo.js"></script>
-    <link rel="dx-template" type="text/html" href="views/HelpPreLoginRegisterStudentInfo.dxview" />
-
-    <script type="text/javascript" src="views/HelpPreLoginRegisterAccountInfo.js"></script>
-    <link rel="dx-template" type="text/html" href="views/HelpPreLoginRegisterAccountInfo.dxview" />
-
-    <script type="text/javascript" src="views/InterimAssessments.js"></script>
-    <link rel="dx-template" type="text/html" href="views/InterimAssessments.dxview" />
-
-    <script type="text/javascript" src="views/InterimAssessmentDetail.js"></script>
-    <link rel="dx-template" type="text/html" href="views/InterimAssessmentDetail.dxview" />
-
-    <script type="text/javascript" src="views/TELPASAssessments.js"></script>
-    <link rel="dx-template" type="text/html" href="views/TELPASAssessments.dxview" />
-
-    <script type="text/javascript" src="views/TPRIAssessments.js"></script>
-    <link rel="dx-template" type="text/html" href="views/TPRIAssessments.dxview" />
-
-    <script type="text/javascript" src="views/LexileMeasure.js"></script>
-    <link rel="dx-template" type="text/html" href="views/LexileMeasure.dxview" />
-
-    <script type="text/javascript" src="views/Immunizations.js"></script>
-    <link rel="dx-template" type="text/html" href="views/Immunizations.dxview" />
-
-    <script type="text/javascript" src="views/Discipline.js"></script>
-    <link rel="dx-template" type="text/html" href="views/Discipline.dxview" />
-
-    <script type="text/javascript" src="views/DisciplineDetail.js"></script>
-    <link rel="dx-template" type="text/html" href="views/DisciplineDetail.dxview" />
-
-    <script type="text/javascript" src="views/SettingsAlertsStudent.js"></script>
-    <link rel="dx-template" type="text/html" href="views/SettingsAlertsStudent.dxview" />
-
-    <script type="text/javascript" src="views/SettingsAlertsStudents.js"></script>
-    <link rel="dx-template" type="text/html" href="views/SettingsAlertsStudents.dxview" />
-
-    <script type="text/javascript" src="views/SettingsChangePasswordChallenge.js"></script>
-    <link rel="dx-template" type="text/html" href="views/SettingsChangePasswordChallenge.dxview" />
-
-    <script type="text/javascript" src="views/StateAssessmentYears.js"></script>
-    <link rel="dx-template" type="text/html" href="views/StateAssessmentYears.dxview" />
-
-    <script type="text/javascript" src="views/SettingsEditStudentAccount.js"></script>
-    <link rel="dx-template" type="text/html" href="views/SettingsEditStudentAccount.dxview" />
-
-    <script type="text/javascript" src="views/Transportation.js"></script>
-    <link rel="dx-template" type="text/html" href="views/Transportation.dxview" />
-
-    <script type="text/javascript" src="views/TransportationRoutes.js"></script>
-    <link rel="dx-template" type="text/html" href="views/TransportationRoutes.dxview" />
-
-    <script type="text/javascript" src="views/TransportationSchedule.js"></script>
-    <link rel="dx-template" type="text/html" href="views/TransportationSchedule.dxview" />
-
-    <script type="text/javascript" src="views/SettingsSecurityQuestionsSetup.js"></script>
-    <link rel="dx-template" type="text/html" href="views/SettingsSecurityQuestionsSetup.dxview" />
-
-    <script type="text/javascript" src="views/ImmunizationsShotsDue.js"></script>
-    <link rel="dx-template" type="text/html" href="views/ImmunizationsShotsDue.dxview" />
-
-    <script type="text/javascript" src="views/ImmunizationsShotRecord.js"></script>
-    <link rel="dx-template" type="text/html" href="views/ImmunizationsShotRecord.dxview" />
-
-    <script type="text/javascript" src="views/Feedback.js"></script>
-    <link rel="dx-template" type="text/html" href="views/Feedback.dxview" />
-
-    <!--<script type="text/javascript" src="views/AccountSearch.js"></script>
-    <link rel="dx-template" type="text/html" href="views/AccountSearch.dxview" />-->
-
-    <script type="text/javascript" src="views/MAP.js"></script>
-    <link rel="dx-template" type="text/html" href="views/MAP.dxview" />
-
-    <script type="text/javascript" src="views/Language.js"></script>
-    <link rel="dx-template" type="text/html" href="views/Language.dxview" />
-
-    <script type="text/javascript" src="views/MessageOptions.js"></script>
-    <link rel="dx-template" type="text/html" href="views/MessageOptions.dxview" />
-
-    <script type="text/javascript" src="views/Inbox.js"></script>
-    <link rel="dx-template" type="text/html" href="views/Inbox.dxview" />
-
-	<script type="text/javascript" src="views/SentMail.js"></script>
-	<link rel="dx-template" type="text/html" href="views/SentMail.dxview"/>
-
-    <script type="text/javascript" src="views/SentMailDetail.js"></script>
-    <link rel="dx-template" type="text/html" href="views/SentMailDetail.dxview" />
-
-    <script type="text/javascript" src="views/StudentDashboard.js"></script>
-    <link rel="dx-template" type="text/html" href="views/StudentDashboard.dxview" />
-
-	<script type="text/javascript" src="views/Homework.js"></script>
-	<link rel="dx-template" type="text/html" href="views/Homework.dxview"/>
+    <link rel="dx-template" type="text/html" href="views/home.dxview"/>
+    <link rel="dx-template" type="text/html" href="views/about.html"/>
+    <link rel="dx-template" type="text/html" href="views/blank.html"/>
+    <link rel="stylesheet" type="text/css" href="views/home.css"/>
+    <script type="text/javascript" src="views/home.js"></script>
 </head>
 <body>
 </body>
